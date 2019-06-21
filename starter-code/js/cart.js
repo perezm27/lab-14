@@ -54,7 +54,7 @@ function showCart() {
 
 function removeItemFromCart(event) {
   event.preventDefault();
-  cart.removeItem('bag');
+  cart.removeItem(event.target.id);
   renderCart();
 }
 
