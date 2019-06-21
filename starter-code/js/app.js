@@ -21,7 +21,7 @@ Cart.prototype.removeItem = function(item) {
       cart.items.splice(i,1);
     }
   }
-  localStorage.setItem('cart', JSON.stringify(cart));
+  localStorage.setItem('cart', JSON.stringify(new Cart(cart.items)));
   // Note: You will have to decide what kind of parameter to pass in here!
 };
 
